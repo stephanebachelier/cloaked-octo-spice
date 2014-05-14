@@ -1,5 +1,16 @@
 var $container = $('.container');
 
+$container.on('webkitTransitionEnd moztransitionend transitionend oTransitionEnd', function () {
+  if (!$container.hasClass('panel-open')) {
+    if ($container.hasClass('left-panel')) {
+      $container.removeClass('left-panel');
+    }
+    if ($container.hasClass('right-panel')) {
+      $container.removeClass('right-panel');
+    }
+  }
+});
+
 var clickListener = function (event) {
   if ($container.hasClass('panel-open')) {
     $container.removeClass('panel-open');
