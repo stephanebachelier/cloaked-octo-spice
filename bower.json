@@ -1,0 +1,10 @@
+{
+  "name": "mobile-layout",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "Font-Awesome": "~4.0.3",
+    "normalize-css": "~3.0.1"
+  },
+  "devDependencies": {}
+}
