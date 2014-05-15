@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~1.11.0",
     "Font-Awesome": "~4.0.3",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "holderjs": "~2.3.2"
   },
   "devDependencies": {}
 }

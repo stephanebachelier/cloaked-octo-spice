@@ -1,5 +1,7 @@
 // bower:scss
 @import '../bower_components/Font-Awesome/css/font-awesome.css';
+//@import 'bourbon';
+
 // endbower
 
 // colours
@@ -38,6 +40,20 @@ body {
 .content {
   position: relative;
   overflow-y: scroll;
+}
+
+.content__header {
+  background-color: $dark-grey;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+  }
+}
+
+.content__body {
+  padding: 1em;
 }
 
 @mixin panel {
@@ -112,24 +128,46 @@ body {
   padding: 0 1em;
   font-size: 1.4em;
 
+
   a {
     text-decoration: none;
+    line-height: 2em;
+    padding: 0.5em;
   }
   li {
     list-style-type: none;
-    padding: 0.5em 0;
+    padding: 0.4em 0;
   }
+}
+
+.sidebar__picture {
+  border-radius: 60px;
+  margin: 1.5em auto;
+  display: block; // to trigger alignment
 }
 
 .sidebar__username {
   text-align: center;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 .sidebar__nav, .sidebar__bottom__nav {
-  padding: 1em 0;
+  padding: 1em 0 0 0;
+  margin: 0;
 }
 
 .sidebar__bottom__nav {
   position: relative;
   bottom: 0;
+}
+
+.sidebar__bottom__logout {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  background: #6F6F6F;
+  /*line-height: 2em;
+  padding: 0.5em;*/
 }
