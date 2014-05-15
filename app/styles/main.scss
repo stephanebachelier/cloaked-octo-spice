@@ -44,7 +44,6 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 90%;
   visibility: hidden;
   z-index: 1;
 }
@@ -52,10 +51,12 @@ body {
 .panel-left {
   @include panel;
   left: 0;
+  right: 10%;
 }
 
 .panel-right {
   @include panel;
+  left: 10%;
   right: 0;
 }
 
@@ -124,8 +125,8 @@ body {
   text-align: center;
 }
 
-.sidebar__nav {
-
+.sidebar__nav, .sidebar__bottom__nav {
+  padding: 1em 0;
 }
 
 .sidebar__bottom__nav {
