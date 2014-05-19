@@ -115,6 +115,10 @@ body {
   }
 }
 
+/* fix ratchet issue */
+.content > .table-view:first-child {
+	margin-top: 0px;
+}
 
 // sidebar - nav
 @import 'sidebar';
