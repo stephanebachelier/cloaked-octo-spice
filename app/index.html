@@ -9,7 +9,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+        <link rel="stylesheet" href="../bower_components/ratchet/dist/css/ratchet.css" />
+        <link rel="stylesheet" href="../bower_components/ratchet/dist/css/ratchet-theme-ios.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -23,40 +24,179 @@
 
         <div class="container">
           <div class="sidebar panel-left">
-            <img class="sidebar__picture" data-src="holder.js/80x80/textmode:literal" />
+            <div class="bar bar-standard bar-footer">
+              <a href="#"><i class="fa fa-fw fa-lg fa-sign-out"></i> Logout</a>
+            </div>
 
-            <p class="sidebar__username">John Doe</p>
+            <div class="content">
+              <img class="sidebar__picture" data-src="holder.js/80x80/textmode:literal" />
 
-            <nav class="sidebar__nav">
-              <li><a href="#"><i class="fa fa-fw fa-lg fa-home"></i> Home</a></li>
-              <li><a href="#"><i class="fa fa-fw fa-lg fa-book"></i> My Profile</a></li>
-              <li><a href="#"><i class="fa fa-fw fa-lg fa-cogs"></i> Settings</a></li>
-              <li><a href="#"><i class="fa fa-fw fa-lg fa-chain"></i> Change password</a></li>
-            </nav>
+              <p class="sidebar__username">John Doe</p>
 
-            <ul class="sidebar__bottom__nav">
-              <li><a href="#"><i class="fa fa-fw fa-lg fa-support"></i> Support</a></li>
-            </ul>
+              <div class="card">
+                <ul class="table-view">
+                  <li><a href="#"><i class="fa fa-fw fa-lg fa-home"></i> Home</a></li>
+                  <li><a href="#"><i class="fa fa-fw fa-lg fa-book"></i> My Profile</a></li>
+                  <li><a href="#"><i class="fa fa-fw fa-lg fa-cogs"></i> Settings</a></li>
+                  <li><a href="#"><i class="fa fa-fw fa-lg fa-chain"></i> Change password</a></li>
+                  <li><a href="#"><i class="fa fa-fw fa-lg fa-info"></i> Support</a></li>
+                </ul>
+              </div>
 
-            <a href="#" class="sidebar__bottom__logout"><i class="fa fa-fw fa-lg fa-sign-out"></i> Logout</a>
+            </div>
           </div>
 
           <div class="panel-right">
-            <div class="header">
-              <h2>Favorites</h2>
+            <header class="bar bar-nav">
+              <h1 class="title">Favorites</h1>
+            </header>
+
+            <div class="content">
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+
+                <li class="table-view-cell">
+                  <img class="media-object pull-left" data-src="holder.js/80x80/textmode:literal" />
+                  <div class="media-body">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="content-wrapper">
+            <header class="bar bar-nav">
+              <a href="#sidebar" class="pull-left btn-nav">
+                <span class="icon icon-bars"></span>
+              </a>
+              <a href="#aside" class="pull-right btn-aside">
+                <span class="icon icon-gear"></span>
+              </a>
+              <h1 class="title">'Allo, 'Allo!</h1>
+            </header>
+
             <div class="content">
-              <a href="#sidebar" class="btn-nav"><i class="fa fa-align-justify fa-2x fa-border"></i></a>
-              <a href="#aside" class="btn-aside"><i class="fa fa-cogs fa-2x fa-border"></i></a>
-
-              <div class="content__header">
-                <h1>'Allo, 'Allo!</h1>
-              </div>
-
-              <div class="content__body">
+              <div class="content-padded">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu enim ligula. Vestibulum vulputate magna diam, ut tempus mi sollicitudin non. Vestibulum ornare varius lorem nec mattis. Pellentesque vitae quam eu urna iaculis venenatis. Morbi et est lectus. Suspendisse eu risus lorem. Sed elementum ultricies libero adipiscing commodo. Nunc a urna vitae mi semper mattis sed tincidunt lacus. Morbi iaculis libero nec nunc bibendum accumsan. Nunc pulvinar justo id porttitor eleifend. Vestibulum porttitor viverra massa eget placerat. Sed bibendum fringilla risus, sit amet luctus dui placerat id. Praesent sollicitudin enim mattis, consectetur justo et, blandit urna. Vestibulum sit amet nulla vehicula, aliquam sem ut, cursus nibh. Mauris et nunc nunc.</p>
 
                 <p>Curabitur vel sapien et odio faucibus venenatis a sed felis. Nullam imperdiet suscipit tellus, sed eleifend sem pharetra sit amet. Suspendisse potenti. Mauris nulla elit, fermentum at ultricies a, posuere at justo. Proin turpis nibh, volutpat et pharetra ac, rhoncus ut lacus. Nam mi felis, scelerisque nec varius sit amet, vestibulum convallis nibh. Vivamus sodales, elit et dapibus suscipit, purus nibh lacinia nisi, vel bibendum augue odio et purus. Nunc interdum lectus libero, vel pellentesque tortor facilisis ut. Cras diam urna, fermentum vel bibendum quis, imperdiet auctor massa. Fusce vitae odio nulla. Vivamus gravida eleifend mi at tempus.</p>
@@ -68,8 +208,6 @@
                 <p>Proin fringilla molestie tempus. Nam sodales metus in felis bibendum euismod. Ut vel lectus eu urna ullamcorper aliquam ut sit amet nisl. Integer elit erat, porta vehicula ligula ac, consequat dapibus nulla. Aliquam lacinia sed libero ac semper. Integer mi tellus, pellentesque nec velit vitae, faucibus iaculis metus. Nullam euismod varius ante, a faucibus tellus rhoncus id. In aliquet pulvinar lectus, quis pharetra neque pharetra et. Pellentesque sit amet nunc ut ligula mattis molestie eget eget enim. Nam eu augue et nibh varius bibendum dictum in dui. Maecenas venenatis sollicitudin sollicitudin. Etiam quis elit at lacus adipiscing euismod non et dolor. Suspendisse volutpat aliquam arcu.</p>
 
                 <p>Ut nibh est, convallis eu felis sed, luctus fringilla erat. Suspendisse vitae quam in arcu tristique laoreet sed nec dolor. Maecenas sagittis, odio ut facilisis condimentum, ante arcu pretium mi, sed congue eros urna vitae arcu. Donec venenatis nec mauris ut egestas. Integer nec vestibulum dui, condimentum sodales sem. Mauris non consequat ipsum. Aliquam purus nisi, scelerisque quis faucibus vel, egestas sit amet est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras cursus vel magna et tristique. Nam velit lacus, pellentesque eu purus sed, sodales viverra mi.</p>
-
-
               </div>
             </div>
           </div>

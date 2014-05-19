@@ -10,6 +10,7 @@ $light-grey: #898989;
 $dark-green: #94d074;
 $light-green: #b1de9a;
 $light-color: #ceecbc;
+$open-panel-margin: 15%;
 
 html, body, .container {
 	width: 100%;
@@ -35,25 +36,11 @@ body {
 	-webkit-transform: translateZ(0) translateX(0) rotateY(0deg); /* reset transforms (Chrome bug) */
 	transform: translateZ(0) translateX(0) rotateY(0deg);
   -webkit-transition: -webkit-transform 0.5s;
-}
+	-webkit-box-shadow: 0px 0px 5px 0px #656565;
+	-moz-box-shadow: 0px 0px 5px 0px #656565;
+	-o-box-shadow: 0px 0px 5px 0px #656565;
+	box-shadow: 0px 0px 5px 0px #656565;
 
-.content {
-  position: relative;
-  overflow-y: scroll;
-}
-
-.content__header {
-  background-color: $dark-grey;
-
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0.5em;
-  }
-}
-
-.content__body {
-  padding: 1em;
 }
 
 @mixin panel {
@@ -67,30 +54,17 @@ body {
 .panel-left {
   @include panel;
   left: 0;
-  right: 10%;
+  right: $open-panel-margin;
 }
 
 .panel-right {
   @include panel;
-  left: 10%;
+  left: $open-panel-margin;
   right: 0;
-}
 
-.btn-nav, .btn-aside {
-  position: fixed;
-  top: 15px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.btn-nav {
-  left: 15px;
-}
-
-.btn-aside {
-  right: 15px;
+	.bar-nav {
+		left: $open-panel-margin;
+	}
 }
 
 .left-panel {
@@ -104,8 +78,16 @@ body {
 
 .panel-open.left-panel {
   .content-wrapper {
-    -webkit-transform: translateX(90%);
+    -webkit-transform: translateX(100-$open-panel-margin);
   }
+
+  .panel-left {
+  }
+}
+
+.scrollable {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .right-panel {
@@ -119,9 +101,20 @@ body {
 
 .panel-open.right-panel {
   .content-wrapper {
-    -webkit-transform: translateX(-90%);
+    -webkit-transform: translateX(-100+$open-panel-margin);
+  }
+
+  .panel-right {
+    overflow-y: scroll;
   }
 }
+
+.panel-open {
+  .content-wrapper {
+    overflow: hidden;
+  }
+}
+
 
 // sidebar - nav
 @import 'sidebar';
